@@ -1,0 +1,7 @@
+name: AutoHarvest
+main: com.zoxplers.autoharvest.AutoHarvest
+version: 1.0.0
+api-version: 1.19
+authors: [Zoxplers]
+website: zoxplers.com
+prefix: AutoHarvest
