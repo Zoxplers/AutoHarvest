@@ -30,9 +30,9 @@ public class PlayerInteractListener implements Listener
 	//Functions
 	@EventHandler
 	public void onPlayerInteract(PlayerInteractEvent event)
-	{
+	{	
 		Block block = event.getClickedBlock();
-		if(crops.contains(block.getType()) && block.getBlockData() instanceof Ageable)
+		if(block != null && crops.contains(block.getType()) && block.getBlockData() instanceof Ageable)
 		{
 			Ageable ageable = (Ageable)block.getBlockData();
 			if(event.getAction() == Action.RIGHT_CLICK_BLOCK && ageable.getAge() == ageable.getMaximumAge())
